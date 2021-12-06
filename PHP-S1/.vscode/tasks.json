@@ -1,0 +1,16 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "misass",
+			"problemMatcher": [],
+			"label": "npm: misass",
+			"detail": "npx sass styles/sass/main.scss styles/css/main.css",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		}
+	]
+}

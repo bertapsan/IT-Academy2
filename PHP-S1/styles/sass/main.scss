@@ -1,0 +1,19 @@
+@import './variables';
+@import './reset';
+@import './header';
+@import './nav';
+@import './articles';
+@import './content';
+@import './footer';
+
+body {
+  height: 100vh;
+  margin: 20px;
+  font-family: 'Noto Sans Display', sans-serif;
+  align-items: center;
+}
+
+.mainContainer {
+  max-width: 1000px;
+  margin: auto;
+}

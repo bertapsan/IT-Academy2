@@ -1,0 +1,17 @@
+.footer {
+  background-color: $color-five;
+  color: $color-white;
+  border-radius: 4px;
+  padding: 2px;
+  display: flex;
+  justify-content: center;
+  margin-top: 14px;
+}
+
+@media all and (min-width: 1000px) {
+  .footer {
+    height: 70px;
+    margin: 25px 0px;
+    align-items: center;
+  }
+}

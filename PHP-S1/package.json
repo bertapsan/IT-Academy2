@@ -1,0 +1,15 @@
+{
+  "name": "PHP-M2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "misass": "npx sass -w styles/sass/main.scss styles/css/main.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.42.1"
+  }
+}
