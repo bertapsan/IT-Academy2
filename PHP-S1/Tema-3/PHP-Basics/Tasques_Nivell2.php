@@ -7,25 +7,37 @@
 // Nivell 2 -  Exercici 1
  $first_number= 3;
  $second_number = 3;
- $sum = $first_number + $second_number;
- $result = ""; 
+ $result = $first_number + $second_number;
+ if ($first_number === $second_number) {
+    $result = 2 * $result;
+}
 
-if ($first_number === $second_number) {
-    $result = 2 * $sum;
-    
-}
-else {
-    $result = $sum;
-    
-}
 echo '<b>'."NIVELL 1 ".'</b>'.'</br>';
 echo "Repte: Quan el valor de la variable first_number i la variable second_number siguin exactament iguals, el resultat de la suma, d'ambdues variables es mutiplicarà per 2; si no son exactament iguals, el resultat reflexarà únicament el valor de la suma de les variables ".'</b>'.'</br>';
-echo 'Aquest és el valor de la primera variable - '.$first_number.'</br>';
-echo 'Aquest és el valor de la segona variable - '.$second_number.'</br>';
-echo 'Aquest és el resultat - '.$result.'</br>&nbsp<br>';
+echo 'Aquest és el valor de la primera variable  '.$first_number.'</br>';
+echo 'Aquest és el valor de la segona variable  '.$second_number.'</br>';
+echo 'Aquest és el resultat  '.$result.'</br>&nbsp<br>';
+
 
 
 // Nivell 2 -  Exercici 2
+echo '<b>'."NIVELL 2 ".'</b>'.'</br>';
+$cadenaOrigin = "barcelona";
+
+//obtener el primer valor de la cadena
+$cadenaFirstValue = $cadenaOrigin[0];
+
+//para obtener el último valor de la cadena utilizo la función lenght, con esta función obtengo la longitud de la cadena y tendré que restarle una posición a lenght, pues las arrays inician en 0
+$cadenalenght = strlen($cadenaOrigin);
+$cadenaLastValue = $cadenaOrigin[$cadenalenght-1];
+
+$cadenaOrigin[0]=$cadenaLastValue;
+$cadenaOrigin[$cadenalenght-1]=$cadenaFirstValue;
+
+echo $cadenaOrigin.'</br>&nbsp<br>';
+
+
+// Nivell 2 -  Exercici 2 - OJO con ARRAY
 echo '<b>'."NIVELL 2 ".'</b>'.'</br>';
 $letters = ["w", "x", "y", "z"];
 echo 'Aquesta és la impressió de l array letters original'.'</br>';

@@ -21,17 +21,21 @@ $age = 45;
  echo '<b>'."Exercici 2 ".'</b>'.'</br>';
  echo $hello.'</br>';
  echo $hello_uppercase.'</br>';
- echo "La mida o longitud de la variable hello es ", mb_strlen($hello). '</br>';
+ echo "La mida o longitud de la variable hello es ", strlen($hello). '</br>';
  echo "Aquesta és la variable hello impresa en ordre invers ", strrev($hello). '</br>';
- echo "Aquesta és la concatenació de la variable hello - " . $hello . " - i la variable course - " .$course . " - i el resultat és --> " . $hello . $course. '</br>&nbsp<br>';
+ echo "Aquesta és la concatenació de la variable hello - " . $hello . " - i la variable course - " .$course . " - i el resultat és -->  $hello  $course ".'</br>&nbsp<br>';
 
  // Nivell 1 - Exercici 3
- $my_name ="Berta Pluma";
+// Declaración de una constante, NO se podrá modificar
+define ("my_name","Berta");
  $html ="
     <html>  
     <head>  
-        <h1><strong>$my_name</strong></h1> 
-    </head>
+        <h1><strong>" . my_name . "</strong></h1> 
+        
+        <!-- Para imprimir una constante NO se usa el símbolo $ -->
+    
+        </head>
     </html>";
  echo '<b>'."Exercici 3 ".'</b>'.'</br>';
  echo $html.'</br>';
@@ -80,4 +84,6 @@ $primera_array = [2, 8, 9, 1, 4];
  var_dump($array_mix). '</br>';
  echo '<br>'."Aquesta és l'impressió, mitjançant print_r, de mesclar els dos arrays, dona 9 valors perquè a l'array inicial de 3 valors l'hi hem afegit un valor en el pas anterior";
  print_r($array_mix). '</br>';
+ echo '<br>'."Aquesta és l'impressió de la quantitat de valors que composa el nou array ";
+ echo count($array_mix);
 ?>
